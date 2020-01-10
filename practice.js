@@ -15,6 +15,11 @@
 */
 
 //Code here
+let me = {
+  name: "Ammon",
+  age: 24
+};
+me.age;
 
 ////////// PROBLEM 2 //////////
 
@@ -24,6 +29,14 @@
 */
 
 //Code here
+let favoriteThings = {
+  band: "Chance the Rapper",
+  food: "Cheesecake",
+  person: "Wife",
+  book: "Hunger Games",
+  movie: "Inception",
+  holiday: "Christmas"
+};
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
@@ -31,13 +44,16 @@
 */
 
 //Code here
-
+favoriteThings.car = "GMC Denali 2500HD";
+favoriteThings.brand = "Nike";
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
 //Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 ////////// PROBLEM 3 //////////
 
@@ -50,6 +66,14 @@
 */
 
 //Code here
+
+let backPack = {};
+
+var item = "firstPocket";
+
+backPack[item] = "chapstick";
+
+console.log(backPack);
 
 /*
   After you do the above, alert your entire backPack object.
@@ -69,12 +93,12 @@ Instead, console.log your whole backPack object and then check out the console.
 
 // Do not edit the code below.
 var user2 = {
-  name: 'Bryan',
+  name: "Bryan",
   age: 24,
-  pwHash: 'U+Ldlngx2BYQk',
-  email: 'BryanSmith33@gmail.com',
-  birthday: '05/02/1990',
-  username: 'bryansmith33'
+  pwHash: "U+Ldlngx2BYQk",
+  email: "BryanSmith33@gmail.com",
+  birthday: "05/02/1990",
+  username: "bryansmith33"
 };
 // Do not edit the code above.
 
@@ -85,6 +109,9 @@ var user2 = {
 */
 
 //Code Here
+
+user2.name = "Bryan G. Smith";
+user2.email = "bryan.smith@devmounta.in";
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
@@ -97,12 +124,22 @@ var user2 = {
 
 //Code Here
 
+let methodCollection = {};
+
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
 
 //Code Here
+
+methodCollection.alertHello = function() {
+  alert("hello");
+
+  methodCollection.logHello = function() {
+    console.log("hello");
+  };
+};
 
 /*
   Now call your alertHello and logHello methods.
